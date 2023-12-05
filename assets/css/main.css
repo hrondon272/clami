@@ -2679,7 +2679,7 @@ input, select, textarea {
 /* Nav */
 
 	#nav {
-		background-color: #1A68B3;
+		background-color: #ac9408;
 		padding: 20px 0;
 	}
 
@@ -2885,8 +2885,9 @@ input, select, textarea {
 		position: relative;
 		color: #ffffff;
 		padding: 4em 0 0 0;
-		background-color: #1D3349;
+		background-color: rgb(51, 51, 51);
 		margin-bottom: 0;
+		filter: brightness(60%);
 	}
 
 		#footer:before {

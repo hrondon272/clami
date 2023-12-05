@@ -15,37 +15,10 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="shortcut icon" href="assets/images/nuevo_logo_equivida.png" type="image/x-icon">
+  <link rel="shortcut icon" href="assets/images/logos/clami-Logo PNG.png" type="image/x-icon">
 
   <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-176931390-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-    gtag('config', 'UA-176931390-1');
-  </script>
-  <!-- Facebook Pixel Code -->
-  <script>
-    !function (f, b, e, v, n, t, s) {
-      if (f.fbq) return; n = f.fbq = function () {
-        n.callMethod ?
-          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
-      };
-      if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
-      n.queue = []; t = b.createElement(e); t.async = !0;
-      t.src = v; s = b.getElementsByTagName(e)[0];
-      s.parentNode.insertBefore(t, s)
-    }(window, document, 'script',
-      'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '1771284346351927');
-    fbq('track', 'PageView');
-  </script>
-  <noscript><img height="1" width="1" style="display:none"
-      src="https://www.facebook.com/tr?id=1771284346351927&ev=PageView&noscript=1" /></noscript>
-  <!-- End Facebook Pixel Code -->
 </head>
 
 <body class="homepage is-preload">
@@ -55,17 +28,9 @@
     <section id="header">
       <section class="container">
         <div class="row">
-          <div class="col-4 col-6-medium col-12-small">
-            <a class="navbar-brand" href="index.html"><img src="assets/images/nuevo_logo_equivida_3.png"
-                class="img-responsive" alt="Logo"></a>
-          </div>
-          <div class="col-4 col-6-medium col-12-small">
-            <a class="navbar-brand" target="_blank" href="https://www.supersalud.gov.co/es-co"><img
-                src="assets/images/SuperSalud.png" class="img-responsive" alt="Logo"></a>
-          </div>
-          <div class="col-4 col-12-medium">
-            <a class="navbar-brand" target="_blank" href="https://www.minsalud.gov.co/Paginas/default.aspx"><img
-                src="assets/images/MinSalud.png" class="img-responsive" alt="Logo"></a>
+          <div class="col-4 col-6-medium col-12-small" style="margin: 20px auto;">
+            <a class="navbar-brand" href="index.html"><img src="assets/images/logos/clami-Logo PNG.png"
+                class="img-responsive" alt="Logo" width="60%"></a>
           </div>
         </div>
       </section>
@@ -74,19 +39,9 @@
       <nav id="nav">
         <ul>
           <li class="current"><a href="index.html">INICIO</a></li>
-          <li><a href="views/conocenos.html">CONÓCENOS</a></li>
-          <li><a href="views/noticias.html">NOTICIAS</a></li>
-          <li><a href="views/servicios.html">SERVICIOS</a></li>
-          <li><a href="views/convenios.html">CONVENIOS</a></li>
-          <li><a href="views/clientes.html">CLIENTES</a></li>
-          <li><a href="views/contacto.html">CONTÁCTENOS</a></li>
-          <li>
-            <a href="#">ACCESO</a>
-            <ul>
-              <li><a href="views/aplicaciones.html">APLICACIONES</a></li>
-              <li><a href="https://equivida.codesoft.com.co/login.php" target="_blank">INTRANET</a></li>
-            </ul>
-          </li>
+          <li><a href="views/quienes_somos.html">QUIENES SOMOS</a></li>
+          <li><a href="views/blogs.html">BLOGS</a></li>
+          <li><a href="views/contacto.html">CONTACTO</a></li>
         </ul>
       </nav>
 
@@ -96,12 +51,12 @@
           <div class="swiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <img src="assets/images/banner1.jpg" alt="Banner 1 equivida" width="100%">
-                <p>En equipo cuidamos tu vida</p>
+                <img src="assets/images/carrusel/portada-1.jpg" alt="Banner 1 CLAMI SAS" width="100%">
+                <p>Refuerzo y aseguramiento de los rieles</p>
               </div>
               <div class="swiper-slide">
-                <img src="assets/images/banner2.jpg" alt="Banner 2 equivida" width="100%">
-                <p>Contamos con los mejores profesionales y la mejor tecnología</p>
+                <img src="assets/images/carrusel/portada-2.jpg" alt="Banner 2 CLAMI SAS" width="100%">
+                <p>Contribuímos a la seguridad de las labores</p>
               </div>
             </div>
           </div>
@@ -111,37 +66,53 @@
       <!-- Intro -->
       <section id="intro" class="container">
         <div class="row">
-          <div class="col-4 col-12-medium">
+          <div class="col-9 col-12-medium" style="margin: auto;">
             <section class="first">
-              <i class="icon solid featured fa-building"></i>
+              <img src="assets/images/carrusel/portada-2.jpg" alt="Imagen del producto"
+                style="width: 60%; margin: 20px auto; border-radius: 50%; box-shadow: 5px 5px 5px black;">
               <header>
-                <h2>Especialistas en Seguridad y Salud en el Trabajo</h2>
+                <h2>Clavos para riel de minería</h2>
               </header>
-              <p>Somos una IPS altamente especializada en Seguridad y Salud en el Trabajo, con un historial de
-                éxito que abarca 11 años en el departamento del Meta y la Orinoquía.</p>
-            </section>
-          </div>
-          <div class="col-4 col-12-medium">
-            <section class="middle">
-              <i class="icon solid featured alt2 fa-check"></i>
-              <header>
-                <h2>Soluciones efectivas</h2>
-              </header>
-              <p>Implementamos soluciones efectivas y personalizadas con el fin de cuidar a sus colaboradores
-                como el recurso más valioso, garantizando su bienestar integral.
-              </p>
-            </section>
-          </div>
-          <div class="col-4 col-12-medium">
-            <section class="last">
-              <i class="icon solid featured alt fa-users "></i>
-              <header>
-                <h2>Valor agregado</h2>
-              </header>
-              <p>Nos diferencia nuestro compromiso, excelencia y el valor que ofrecemos. No solo cumplimos con
-                los requisitos legales, sino que también entregamos un valor agregado que beneficia a su talento
-                humano y refuerza la seguridad en su empresa. No se trata solo de cumplir con regulaciones, sino
-                de cuidar y fortalecer el corazón de su organización.</p>
+              <p>Los clavos rieleros son piezas que se utilizan en el refuerzo y aseguramiento de los rieles, y que
+                permite mantener la distancia entre los mismos. Son utilizados principalmente en las actividades de
+                minería subterránea, aunque también se utilizan en operaciones ferroviarias; son elaborados a mano, en
+                hierro forjado y con material de primera calidad. Contamos con un stock permanente de clavos para riel
+                de 25 libras yarda (3/8” x 3-1/2”) y riel de 40 libras yarda (3/7” x 3-1/2”).</p>
+
+              <table>
+                <caption>Tabla de grosor y longitud</caption>
+                <thead>
+                  <tr>
+                    <th>Descripción</th>
+                    <th>Grosor</th>
+                    <th>Longitud</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td data-label="Descripción">CLavos para riel de 25</td>
+                    <td data-label="Grosor">9 mm</td>
+                    <td data-label="Longitud">9 cm</td>
+                  </tr>
+                  <tr>
+                    <td data-label="Descripción">Libras yarda</td>
+                    <td data-label="Grosor">(3/8”)</td>
+                    <td data-label="Longitud">(3-1/2”)</td>
+                  </tr>
+                  <tr>
+                    <td data-label="Descripción">Clavos para riel de 40</td>
+                    <td data-label="Grosor">10 mm</td>
+                    <td data-label="Longitud">9 cm</td>
+                  </tr>
+                  <tr>
+                    <td data-label="Descripción">Libras yarda</td>
+                    <td data-label="Grosor">(3/7”)</td>
+                    <td data-label="Longitud">(3-1/2”)</td>
+                  </tr>
+                </tbody>
+              </table>
+              <p>Si requiere clavos de otras dimensiones puede contactarse con nosotros en el botón verde que se
+                encuentra en la zona inferior derecha de la pantalla.</p>
             </section>
           </div>
         </div>
@@ -158,79 +129,29 @@
             <!-- Portfolio -->
             <section>
               <header class="major">
-                <h2>SERVICIOS Y ASESORÍA EN SALUD OCUPACIONAL</h2>
-                <dotlottie-player src="https://lottie.host/44223603-e192-4438-b03d-f9b717c51757/pXX0OohCAr.json"
+                <h2>ALGUNOS DE NUESTROS CLIENTES</h2>
+                <dotlottie-player src="https://lottie.host/9ca13892-a667-401b-9b39-8270db7909fc/zWn4HZesQo.json"
                   background="transparent" speed="1" style="width: 300px; height: 300px; margin: auto;" loop
                   autoplay></dotlottie-player>
               </header>
-              <div class="row" style="text-align: center;">
-                <div class="col-3 col-6-medium col-12-small">
-                  <section class="box">
-                    <a href="#" class="image featured"><img src="assets/images/services/medicina laboral.png" alt="Servicio de medicina laboral" /></a>
-                    <header>
-                      <h3>Medicina Laboral</h3>
-                    </header>
-                  </section>
+              <div class="gallery">
+                <div class="companies-section">
+                  <div class="img visualize"><img src="assets/images/clientes/aris.png" alt="Aris" />
+                  </div>
+                  <div class="img visualize"><img src="assets/images/clientes/damasa.png" alt="Damasa" />
+                  </div>
+                  <div class="img visualize"><img src="assets/images/clientes/jg.png" alt="JG Representaciones" />
+                  </div>
+                  <div class="img visualize"><img src="assets/images/clientes/porvenir.jpeg"
+                      alt="Mina el gran porvenir" />
+                  </div>
                 </div>
-                <div class="col-3 col-6-medium col-12-small">
-                  <section class="box">
-                    <a href="#" class="image featured"><img src="assets/images/services/rehabilitación.png" alt="Servicio de rehabilitación" /></a>
-                    <header>
-                      <h3>Rehabilitación</h3>
-                    </header>
-                  </section>
+                <div class="companies-section">
                 </div>
-                <div class="col-3 col-6-medium col-12-small">
-                  <section class="box">
-                    <a href="#" class="image featured"><img src="assets/images/services/servicios de prevención  en salud ocupacional.png" alt="Servicios de prevención en salud ocupacional y ARL" /></a>
-                    <header>
-                      <h3>Servicios de prevención en salud ocupacional y ARL</h3>
-                    </header>
-                  </section>
-                </div>
-                <div class="col-3 col-6-medium col-12-small">
-                  <section class="box">
-                    <a href="#" class="image featured"><img src="assets/images/services/optica.png" alt="Servicio de óptica" /></a>
-                    <header>
-                      <h3>Óptica</h3>
-                    </header>
-                  </section>
-                </div>
-                <div class="col-3 col-6-medium col-12-small">
-                  <section class="box">
-                    <a href="#" class="image featured"><img src="assets/images/services/laboratorio.png" alt="Laboratorio clínico básico y especializado" /></a>
-                    <header>
-                      <h3>Laboratorio clínico básico y especializado</h3>
-                    </header>
-                  </section>
-                </div>
-                <div class="col-3 col-6-medium col-12-small">
-                  <section class="box">
-                    <a href="#" class="image featured"><img src="assets/images/services/consulta medica especializada.png" alt="Consulta médica especializada" /></a>
-                    <header>
-                      <h3>Consulta médica especializada</h3>
-                    </header>
-                  </section>
-                </div>
-                <!-- <div class="col-3 col-6-medium col-12-small">
-                  <section class="box">
-                    <a href="#" class="image featured"><img src="assets/images/services/convenios.png" alt="Convenios" /></a>
-                    <header>
-                      <h3>Convenios</h3>
-                    </header>
-                  </section>
-                </div>
-                <div class="col-3 col-6-medium col-12-small">
-                  <section class="box">
-                    <a href="#" class="image featured"><img src="assets/images/services/sedes y red nacional aliada.png" alt="Sedes y red nacional aliada" /></a>
-                    <header>
-                      <h3>Sedes y red nacional aliada</h3>
-                    </header>
-                  </section>
-                </div> -->
               </div>
               <div style="margin-top: 20px; text-align: center;">
-                <a href="views/servicios.html" class="button">Ver más</a>
+                <a href="https://api.whatsapp.com/send?phone=573113709559&text=Comun%C3%ADcate%20con%20nosotros"
+                  target="_blank" title="Comunícate con nosotros" class="button">Chatea ya!</a>
               </div>
             </section>
           </div>
@@ -238,11 +159,11 @@
       </div>
     </section>
 
-    <a href="https://api.whatsapp.com/send?phone=573223098948&text=Hola,%20estuve%20revisando%20su%20sitio%20web%20y%20quiero%20conocer%20m%C3%A1s%20sobre%20sus%20servicios"
-      target="_blank" title="¿Podemos ayudarte?">
+    <a href="https://api.whatsapp.com/send?phone=573113709559&text=Comun%C3%ADcate%20con%20nosotros" target="_blank"
+      title="Comunícate con nosotros">
       <div id="whatsappContainer">
-        <img src="assets/images/icons/whatsapp.png" width="60px"
-          height="60px" alt="Whatsapp iconos creados por Fathema Khanom - Flaticon">
+        <img src="assets/images/logos/whatsapp.png" width="60px" height="60px"
+          alt="Whatsapp iconos creados por Fathema Khanom - Flaticon">
       </div>
     </a>
 
@@ -250,73 +171,45 @@
     <section id="footer">
       <div class="container">
         <div class="row">
-          <div class="col-4 col-6-medium col-12-small">
-            <h3 style="text-align: center;">IPS Villavicencio</h3>
+          <div class="col-6 col-6-medium col-12-small" style="text-align: center;">
+            <h3>Donde estamos ubicados?</h3>
             <ul class="contact-info">
               <li>
                 <i class="fa-solid fa-location-dot"></i>
                 <div>
-                  <p>Calle 32 # 39-35 Barzal (ANTIGUA DIAN)</p>
-                  <p>Villavicencio - Meta</p>
+                  <p>Calle ## # 00-00 NNNNNNNNNN</p>
+                  <p>NNNNN - NNNNN</p>
                 </div>
               </li>
               <li>
                 <i class="fa-solid fa-envelope"></i>
                 <div>
-                  <p><a href="mailto:diradministrativo@equividaso.com.co"
-                      style="text-decoration: none;">diradministrativo@equividaso.com.co</a></p>
-                  <p><a href="mailto:gestionintegral@equividaso.com.co"
-                      style="text-decoration: none;">gestionintegral@equividaso.com.co</a></p>
+                  <p><a href="mailto:administracion@clami.com.co"
+                      style="text-decoration: none;">administracion@clami.com.co</a></p>
                 </div>
               </li>
               <li>
                 <i class="fa-solid fa-phone-volume"></i>
                 <div>
-                  <p><a href="tel://6086849725" style="text-decoration: none;">6086849725</a></p>
-                  <p><a href="tel://3223098940" style="text-decoration: none;">+57 322 309 8940</a></p>
+                  <p><a href="tel://6000000000" style="text-decoration: none;">6000000000</a></p>
+                  <p><a href="tel://3223098942" style="text-decoration: none;">+57 322 000 0000</a></p>
                 </div>
               </li>
             </ul>
           </div>
-          <div class="col-4 col-6-medium col-12-small" style="text-align: center;">
-            <h3>IPS Acacías</h3>
-            <ul class="contact-info">
-              <li>
-                <i class="fa-solid fa-location-dot"></i>
-                <div>
-                  <p>Calle 13 # 12-44 Juan Mellao</p>
-                  <p>Acacías - Meta</p>
-                </div>
-              </li>
-              <li>
-                <i class="fa-solid fa-envelope"></i>
-                <div>
-                  <p><a href="mailto:acacias@equividaso.com.co"
-                      style="text-decoration: none;">acacias@equividaso.com.co</a></p>
-                </div>
-              </li>
-              <li>
-                <i class="fa-solid fa-phone-volume"></i>
-                <div>
-                  <p><a href="tel://6086574544" style="text-decoration: none;">6086574544</a></p>
-                  <p><a href="tel://3223098942" style="text-decoration: none;">+57 322 309 8942</a></p>
-                </div>
-              </li>
-            </ul>
-          </div>
-          <div class="col-4 col-6-medium col-12-small" style="text-align: center; margin-bottom: -80px;">
+          <div class="col-6 col-6-medium col-12-small" style="text-align: center; margin-bottom: -80px;">
             <h3>Nuestras redes sociales</h3>
             <div class="social-networks">
-              <a href="https://linkedin.com/company/equividaso" target="_blank" title="Linkedin">
+              <a href="https://linkedin.com/company/" target="_blank" title="Linkedin">
                 <i class="fa-brands fa-linkedin"></i>
               </a>
-              <a href="https://twitter.com/equividaso" target="_blank" title="X">
+              <a href="https://twitter.com" target="_blank" title="X">
                 <i class="fa-brands fa-x-twitter"></i>
               </a>
-              <a href="https://facebook.com/equivida.so" target="_blank" title="Facebook">
+              <a href="https://facebook.com/" target="_blank" title="Facebook">
                 <i class="fa-brands fa-facebook"></i>
               </a>
-              <a href="https://instagram.com/equivida.so" target="_blank" title="Instagram">
+              <a href="https://instagram.com/" target="_blank" title="Instagram">
                 <i class="fa-brands fa-instagram"></i>
               </a>
             </div>
@@ -354,26 +247,27 @@
                     <div class="row" style="font-size: 20px;">
                       <div class="col-12">
                         <p class="paragraph" style="font-weight: bold;">EMPRESAS</p>
-                        <img src="assets/images/logos/arte-sky-digital.png" alt="Logo de Arte Sky DIGITAL" style="margin-top: 10px;">                        
+                        <img src="assets/images/logos/arte-sky-digital.png" alt="Logo de Arte Sky DIGITAL"
+                          style="margin-top: 10px;">
                       </div>
-                      <div class="col-6 col-6-medium col-12-small">
-                        <p>Copyright &copy; 2017 - Desarrollado por C&K Soluciones de Software.</p>
-                      </div>
-                      <div class="col-6 col-6-medium col-12-small">
-                        <p>Copyright &copy; 2023 - Rediseño por <a href="https://artesky.co/" target="_blank" style="text-decoration: none; color: blue; font-weight: bold;">Arte Sky DIGITAL</a>.</p>
+                      <div class="col-6 col-6-medium col-12-small" style="margin: auto;">
+                        <p>Copyright &copy; 2023 - Rediseño por <a href="https://artesky.co/" target="_blank"
+                            style="text-decoration: none; color: blue; font-weight: bold;">Arte Sky DIGITAL</a>.</p>
                       </div>
                     </div>
                     <div class="row" style="font-size: 20px;">
                       <div class="col-12">
-                        <p class="paragraph" style="font-weight: bold;">RECURSOS Y PLANTILLA</p>                          
+                        <p class="paragraph" style="font-weight: bold;">RECURSOS Y PLANTILLA</p>
                       </div>
                       <div class="col-6 col-6-medium col-12-small">
-                        Design: <a href="http://html5up.net" target="_blank" style="text-decoration: none; color: blue; font-weight: bold;">
+                        Design: <a href="http://html5up.net" target="_blank"
+                          style="text-decoration: none; color: blue; font-weight: bold;">
                           HTML5 UP
                         </a>
                       </div>
                       <div class="col-6 col-6-medium col-12-small">
-                        Demo Images: <a href="https://www.facebook.com/dreametry.ph" target="_blank" style="text-decoration: none; color: blue; font-weight: bold;">
+                        Demo Images: <a href="https://www.facebook.com/dreametry.ph" target="_blank"
+                          style="text-decoration: none; color: blue; font-weight: bold;">
                           Dreametry Doodle
                         </a>
                       </div>
@@ -382,7 +276,8 @@
                       <p class="paragraph" style="font-weight: bold;">ICONOS OBTENIDOS DE FLATICON</p>
                       <ol style="list-style: none; font-size: 15px; font-weight: bold; margin-top: 20px;">
                         <li>
-                          <a href="https://www.flaticon.es/iconos-gratis/whatsapp" target="_blank" title="Whatsapp iconos" style="color: blue; text-decoration: none;">
+                          <a href="https://www.flaticon.es/iconos-gratis/whatsapp" target="_blank"
+                            title="Whatsapp iconos" style="color: blue; text-decoration: none;">
                             Whatsapp iconos creados por Fathema Khanom - Flaticon
                           </a>
                         </li>
@@ -393,18 +288,20 @@
                           </a>
                         </li>
                         <li>
-                          <a href="https://www.flaticon.es/iconos-gratis/mensaje" target="_blank" title="mensaje iconos" style="color: blue; text-decoration: none;">
+                          <a href="https://www.flaticon.es/iconos-gratis/mensaje" target="_blank" title="mensaje iconos"
+                            style="color: blue; text-decoration: none;">
                             Mensaje iconos creados por Freepik - Flaticon
                           </a>
                         </li>
                       </ol>
                     </div>
                     <div style="text-align: right;">
-                      <button class="closeButton" onclick="closePopup('popup-overlay1')" style="text-decoration: none;" title="Cerrar">Cerrar</button>
+                      <button class="closeButton" onclick="closePopup('popup-overlay1')" style="text-decoration: none;"
+                        title="Cerrar">Cerrar</button>
                     </div>
                   </div>
                 </div>
-              </div>              
+              </div>
             </div>
           </div>
         </div>
