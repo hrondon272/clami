@@ -334,8 +334,10 @@ input, select, textarea {
 		cursor: pointer;
 		list-style: none;
 		padding: 10px;
-		background-color: #3c5977;
+		background-color: #47C93D;
 		border-radius: 6px;
+		color: rgb(255, 255, 255) !important;
+		font-weight: 400;
 	}
 
 	.closeButton {

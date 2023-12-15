@@ -26,8 +26,8 @@
             <section class="container">
                 <div class="row">
                     <div class="col-4 col-6-medium col-12-small" style="margin: 20px auto;">
-                      <a class="navbar-brand" href="index.html"><img src="../assets/images/logos/clami-Logo PNG.png"
-                          class="img-responsive" alt="Logo" width="60%"></a>
+                        <a class="navbar-brand" href="index.html"><img src="../assets/images/logos/clami-Logo PNG.png"
+                                class="img-responsive" alt="Logo" width="60%"></a>
                     </div>
                 </div>
             </section>
@@ -56,9 +56,9 @@
             <!-- Intro -->
             <section id="intro" class="container" style="margin-top: 32px;">
                 <div class="row">
-                    <div class="col-6 col-12-medium">
+                    <div class="col-8 col-12-medium" style="margin: auto;">
                         <p class="paragraph">Envíanos un mensaje a través del siguiente formulario</p>
-                        <form action="#" target="" method="get" name="formDatosPersonales">
+                        <form action="../mails/contact.php" method="post" id="formDatosPersonales" name="formDatosPersonales">
                             <div style="display: grid; grid-template-columns: 2, 1fr; gap: 8px;">
                                 <div style="grid-column: 1;">
                                     <label for="first_name">NOMBRE</label>
@@ -83,174 +83,154 @@
                             </div>
                             <label for="message">MENSAJE</label>
                             <textarea name="message" for="message" placeholder="" maxlength="300"></textarea>
+                            <div id="response" style="padding: 4px; border-radius: 6px; color: white;"></div>
 
                             <input type="submit" name="send" value="Enviar" />
                         </form>
-                    </div>
-                    <div class="col-6 col-12-medium">
-                        <p class="paragraph">Encuéntranos</p>
-                        <div class="row" style="padding-top: 20px;">
-                            <div class="col-12">
-                                <p class="third-title" style="margin-bottom: 10px;">Medellin</p>
-                                <iframe allowfullscreen="" frameborder="0" height="300"
-                                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d213431.03499647308!2d-75.56724246380597!3d6.284864664328321!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sco!4v1701813959154!5m2!1ses!2sco"
-                                    style="border:0; border-radius: 4px;" width="400"></iframe>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </section>
         </section>
     </div>
 
-    <a href="https://api.whatsapp.com/send?phone=573113709559&text=Comun%C3%ADcate%20con%20nosotros"
-        target="_blank" title="Comunícate con nosotros">
+    <a href="https://api.whatsapp.com/send?phone=573113709559&text=Comun%C3%ADcate%20con%20nosotros" target="_blank"
+        title="Comunícate con nosotros">
         <div id="whatsappContainer">
             <img src="../assets/../assets/images/logos/whatsapp.png" width="60px" height="60px"
                 alt="Whatsapp iconos creados por Fathema Khanom - Flaticon">
         </div>
     </a>
 
+    <!-- This pop-up is hidden -->
+    <div class="popup-overlay" id="popup-overlay1">
+        <div class="popup">
+            <div class="container containerPopup">
+                <div class="row" style="font-size: 20px;">
+                    <div class="col-12">
+                        <p class="paragraph" style="font-weight: bold;">EMPRESAS</p>
+                        <img src="assets/images/logos/arte-sky-digital.png" alt="Logo de Arte Sky DIGITAL"
+                            style="margin-top: 10px;">
+                    </div>
+                    <div class="col-6 col-6-medium col-12-small" style="margin: auto;">
+                        <p>Copyright &copy; 2023 - Rediseño por <a href="https://artesky.co/" target="_blank"
+                                style="text-decoration: none; color: blue; font-weight: bold;">Arte Sky DIGITAL</a>.</p>
+                    </div>
+                </div>
+                <div class="row" style="font-size: 20px;">
+                    <div class="col-12">
+                        <p class="paragraph" style="font-weight: bold;">RECURSOS Y PLANTILLA</p>
+                    </div>
+                    <div class="col-6 col-6-medium col-12-small">
+                        Design: <a href="http://html5up.net" target="_blank"
+                            style="text-decoration: none; color: blue; font-weight: bold;">
+                            HTML5 UP
+                        </a>
+                    </div>
+                    <div class="col-6 col-6-medium col-12-small">
+                        Demo Images: <a href="https://www.facebook.com/dreametry.ph" target="_blank"
+                            style="text-decoration: none; color: blue; font-weight: bold;">
+                            Dreametry Doodle
+                        </a>
+                    </div>
+                </div>
+                <div style="margin-top: 20px;">
+                    <p class="paragraph" style="font-weight: bold;">ICONOS OBTENIDOS DE FLATICON</p>
+                    <ol style="list-style: none; font-size: 15px; font-weight: bold; margin-top: 20px;">
+                        <li>
+                            <a href="https://www.flaticon.es/iconos-gratis/whatsapp" target="_blank"
+                                title="Whatsapp iconos" style="color: blue; text-decoration: none;">
+                                Whatsapp iconos creados por Fathema Khanom - Flaticon
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.flaticon.es/iconos-gratis/encuesta-en-linea" target="_blank"
+                                title="Encuesta en línea iconos" style="color: blue; text-decoration: none;">
+                                Encuesta en línea iconos creados por Awicon - Flaticon
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.flaticon.es/iconos-gratis/mensaje" target="_blank"
+                                title="mensaje iconos" style="color: blue; text-decoration: none;">
+                                Mensaje iconos creados por Freepik - Flaticon
+                            </a>
+                        </li>
+                    </ol>
+                </div>
+                <div style="text-align: right;">
+                    <button class="closeButton" onclick="closePopup('popup-overlay1')" style="text-decoration: none;"
+                        title="Cerrar">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Footer -->
     <section id="footer">
         <div class="container">
             <div class="row">
                 <div class="col-6 col-6-medium col-12-small" style="text-align: center;">
-                  <h3>Donde estamos ubicados?</h3>
-                  <ul class="contact-info">
-                    <li>
-                      <i class="fa-solid fa-location-dot"></i>
-                      <div>
-                        <p>Calle ## # 00-00 NNNNNNNNNN</p>
-                        <p>NNNNN - NNNNN</p>
-                      </div>
-                    </li>
-                    <li>
-                      <i class="fa-solid fa-envelope"></i>
-                      <div>
-                        <p><a href="mailto:administracion@clami.com.co"
-                            style="text-decoration: none;">administracion@clami.com.co</a></p>
-                      </div>
-                    </li>
-                    <li>
-                      <i class="fa-solid fa-phone-volume"></i>
-                      <div>
-                        <p><a href="tel://3113709559" style="text-decoration: none;">+57 311 370 9559</a></p>
-                      </div>
-                    </li>
-                  </ul>
+                    <h3>Donde estamos ubicados?</h3>
+                    <ul class="contact-info">
+                        <li>
+                            <i class="fa-solid fa-envelope"></i>
+                            <div>
+                                <p><a href="mailto:Clavosclami@gmail.com"
+                                        style="text-decoration: none;">Clavosclami@gmail.com</a></p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-phone-volume"></i>
+                            <div>
+                                <p><a href="tel://3113709559" style="text-decoration: none;">+57 311 370 9559</a></p>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
                 <div class="col-6 col-6-medium col-12-small" style="text-align: center; margin-bottom: -80px;">
-                  <h3>Nuestras redes sociales</h3>
-                  <div class="social-networks">
-                    <a href="https://linkedin.com/company/" target="_blank" title="Linkedin">
-                      <i class="fa-brands fa-linkedin"></i>
-                    </a>
-                    <a href="https://twitter.com" target="_blank" title="X">
-                      <i class="fa-brands fa-x-twitter"></i>
-                    </a>
-                    <a href="https://facebook.com/" target="_blank" title="Facebook">
-                      <i class="fa-brands fa-facebook"></i>
-                    </a>
-                    <a href="https://instagram.com/" target="_blank" title="Instagram">
-                      <i class="fa-brands fa-instagram"></i>
-                    </a>
-                  </div>
-                  <hr>
-                  <h3>Horario de Atención</h3>
-                  <div class="container" style="margin-top: 20px;">
-                    <div class="row">
-                      <div class="col-6">Lunes - Viernes:</div>
-                      <div class="col-6">
-                        <ul style="list-style: none; text-align: left;">
-                          <li>7:00 am - 12:00 pm</li>
-                          <li>1:00 pm - 4:00 pm</li>
-                        </ul>
-                      </div>
+                    <h3>Nuestras redes sociales</h3>
+                    <div class="social-networks">
+                        <a href="https://linkedin.com/company/" target="_blank" title="Linkedin">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                        <a href="https://twitter.com" target="_blank" title="X">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+                        <a href="https://facebook.com/" target="_blank" title="Facebook">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                        <a href="https://instagram.com/" target="_blank" title="Instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
                     </div>
-                    <div class="row">
-                      <div class="col-6">Sábados:</div>
-                      <div class="col-6">
-                        <ul style="list-style: none; text-align: left;">
-                          <li>7:00 am - 12:00 pm</li>
-                        </ul>
-                      </div>
+                    <hr>
+                    <h3>Horario de atención</h3>
+                    <div class="container" style="margin-top: 20px;">
+                        <div class="row">
+                            <div class="col-6">Lunes - Viernes:</div>
+                            <div class="col-6">
+                                <ul style="list-style: none; text-align: left;">
+                                    <li>7:00 am - 12:00 pm</li>
+                                    <li>1:00 pm - 4:00 pm</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">Sábados:</div>
+                            <div class="col-6">
+                                <ul style="list-style: none; text-align: left;">
+                                    <li>7:00 am - 12:00 pm</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                  </div>
                 </div>
             </div>
             <div class="row" style="margin-top: 60px;">
                 <div class="col-12">
                     <div id="copyright">
-                        <a id="openButton" onclick="closePopup('popup-overlay1')" style="text-decoration: none;">Ver
-                            créditos</a>
-                        <!-- This pop-up is hidden -->
-                        <div class="popup-overlay" id="popup-overlay1">
-                            <div class="popup">
-                                <div class="container containerPopup">
-                                    <div class="row" style="font-size: 20px;">
-                                        <div class="col-12">
-                                            <p class="paragraph" style="font-weight: bold;">EMPRESAS</p>
-                                            <img src="../assets/../assets/images/logos/arte-sky-digital.png"
-                                                alt="Logo de Arte Sky DIGITAL" style="margin-top: 10px;">
-                                        </div>
-                                        <div class="col-6 col-6-medium col-12-small" style="margin: auto;">
-                                            <p>Copyright &copy; 2023 - Rediseño por <a href="https://artesky.co/"
-                                                    target="_blank"
-                                                    style="text-decoration: none; color: blue; font-weight: bold;">Arte
-                                                    Sky DIGITAL</a>.</p>
-                                        </div>
-                                    </div>
-                                    <div class="row" style="font-size: 20px;">
-                                        <div class="col-12">
-                                            <p class="paragraph" style="font-weight: bold;">RECURSOS Y PLANTILLA</p>
-                                        </div>
-                                        <div class="col-6 col-6-medium col-12-small">
-                                            Design: <a href="http://html5up.net" target="_blank"
-                                                style="text-decoration: none; color: blue; font-weight: bold;">
-                                                HTML5 UP
-                                            </a>
-                                        </div>
-                                        <div class="col-6 col-6-medium col-12-small">
-                                            Demo Images: <a href="https://www.facebook.com/dreametry.ph" target="_blank"
-                                                style="text-decoration: none; color: blue; font-weight: bold;">
-                                                Dreametry Doodle
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div style="margin-top: 20px;">
-                                        <p class="paragraph" style="font-weight: bold;">ICONOS OBTENIDOS DE FLATICON
-                                        </p>
-                                        <ol
-                                            style="list-style: none; font-size: 15px; font-weight: bold; margin-top: 20px;">
-                                            <li>
-                                                <a href="https://www.flaticon.es/iconos-gratis/whatsapp" target="_blank"
-                                                    title="Whatsapp iconos" style="color: blue; text-decoration: none;">
-                                                    Whatsapp iconos creados por Fathema Khanom - Flaticon
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="https://www.flaticon.es/iconos-gratis/encuesta-en-linea"
-                                                    target="_blank" title="Encuesta en línea iconos"
-                                                    style="color: blue; text-decoration: none;">
-                                                    Encuesta en línea iconos creados por Awicon - Flaticon
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="https://www.flaticon.es/iconos-gratis/mensaje" target="_blank"
-                                                    title="mensaje iconos" style="color: blue; text-decoration: none;">
-                                                    Mensaje iconos creados por Freepik - Flaticon
-                                                </a>
-                                            </li>
-                                        </ol>
-                                    </div>
-                                    <div style="text-align: right;">
-                                        <button class="closeButton" onclick="closePopup('popup-overlay1')"
-                                            style="text-decoration: none;" title="Cerrar">Cerrar</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <a id="openButton" onclick="closePopup('popup-overlay1')" style="text-decoration: none;">
+                            Ver créditos
+                        </a>
                     </div>
                 </div>
             </div>
@@ -265,6 +245,36 @@
     <script src="../assets/js/breakpoints.min.js"></script>
     <script src="../assets/js/util.js"></script>
     <script src="../assets/js/main.js"></script>
+    <script>
+        let response = document.getElementById('response');
+        let form = document.getElementById('formDatosPersonales');
+        
+        form.addEventListener('submit', function(event) {
+            event.preventDefault()
+            
+            response.style.backgroundColor = "rgb(37,150,190)";
+            response.innerHTML = 'Enviando mensaje...';    
+            let formData = new FormData(form);
+    
+            let xhr = new XMLHttpRequest();
+            xhr.open('POST', 'https://clami.com/mails/contact.php', true);
+
+            xhr.onload = function() {
+                if (xhr.status === 200) {
+                    response.style.backgroundColor = "rgb(83, 179, 83)";
+                    response.innerHTML = xhr.responseText;
+                    form.reset();
+                } else {
+                    response.style.backgroundColor = "rgb(245, 78, 78)";
+                    response.innerHTML = 'Error al enviar el formulario, por favor vuelva a intentar';
+                }
+            };
+            xhr.onerror = function() {
+                response.innerHTML = 'Ha ocurrido un error, por favor vuelva a intentar';
+            };
+            xhr.send(formData);
+        });
+    </script>
 
 </body>
 
