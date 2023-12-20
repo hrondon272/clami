@@ -17,15 +17,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     try {
         $mail->isSMTP();
-        $mail->Host = 'mail.equividasaludocupacional.com';
+        $mail->Host = 'smtp.hostinger.com';
         $mail->SMTPAuth = true;
-        $mail->Username = 'contacto-pagina@equividasaludocupacional.com';
-        $mail->Password = '9%Sr.HybH#XL';
+        $mail->Username = 'contacto@clavosclami.com';
+        $mail->Password = '22a/8WFz,Kq=';
         $mail->SMTPSecure = 'tls';
-        $mail->Port = 587;
+        $mail->Port = 465; // If doesn't works, put 587
 
         $mail->setFrom($email, $first_name . ' ' . $last_name);
-        $mail->addAddress('Servicioalcliente@equividaso.com.co');
+        $mail->addAddress('clavosclami@gmail.com');
         $mail->Subject = 'Nuevo mensaje desde el formulario de contacto';
         $mail->Body = "Nombre: $first_name $last_name\nCorreo electrónico: $email\nTeléfono: $phone\nMensaje: $message";
 
