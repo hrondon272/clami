@@ -253,7 +253,7 @@
             let formData = new FormData(form);
     
             let xhr = new XMLHttpRequest();
-            xhr.open('POST', 'https://clami.com/mails/contact.php', true);
+            xhr.open('POST', 'https://clavosclami.com/mails/contact.php', true);
 
             xhr.onload = function() {
                 if (xhr.status === 200) {
@@ -266,6 +266,7 @@
                 }
             };
             xhr.onerror = function() {
+                response.style.backgroundColor = "rgb(245, 78, 78)";
                 response.innerHTML = 'Ha ocurrido un error, por favor vuelva a intentar';
             };
             xhr.send(formData);

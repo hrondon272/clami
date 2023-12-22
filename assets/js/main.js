@@ -79,13 +79,13 @@ function closePopup(popupId) {
 	document.getElementById(popupId).style.display = 'none';
 }
 
-if(window.location.href === "http://clavosclami.com/index.html" || window.location.href === "https://clavosclami.com/index.html" || window.location.href === "https://www.clavosclami.com/index.html" || window.location.href === "https://clavosclami.com" || window.location.href === "https://clavosclami.com/"){
+if(window.location.href === "http://clavosclami.com/index.html" || window.location.href === "https://clavosclami.com/index.html" || window.location.href === "https://www.clavosclami.com/index.html" || window.location.href === "https://clavosclami.com" || window.location.href === "http://clavosclami.com/"){
     const swiper = new Swiper('.swiper', {
     	slidesPerViw: 1,
     	spaceBetween: 30,
       	loop: true,
     	autoplay: {
-    		delay: 10000
+    		delay: 8000
     	}
     });
 }

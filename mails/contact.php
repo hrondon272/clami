@@ -1,4 +1,8 @@
 <?php
+header("Access-Control-Allow-Origin: *");
+header("Access-Control-Allow-Methods: POST");
+header("Access-Control-Allow-Headers: Content-Type");
+
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
@@ -19,12 +23,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->isSMTP();
         $mail->Host = 'smtp.hostinger.com';
         $mail->SMTPAuth = true;
-        $mail->Username = 'contacto@clavosclami.com';
-        $mail->Password = '22a/8WFz,Kq=';
+        $mail->Username = 'contact@clavosclami.com';
+        $mail->Password = '9%3[)Nbm\5QO';
         $mail->SMTPSecure = 'tls';
-        $mail->Port = 465; // If doesn't works, put 587
+        $mail->Port = 587; // If doesn't works, put 587
+        $mail->CharSet = 'UTF-8';
 
-        $mail->setFrom($email, $first_name . ' ' . $last_name);
+        $mail->setFrom("contact@clavosclami.com", "Formulario de contacto de la p&aacute;gina web");
         $mail->addAddress('clavosclami@gmail.com');
         $mail->Subject = 'Nuevo mensaje desde el formulario de contacto';
         $mail->Body = "Nombre: $first_name $last_name\nCorreo electrónico: $email\nTeléfono: $phone\nMensaje: $message";
