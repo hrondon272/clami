@@ -12,6 +12,7 @@
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="shortcut icon" href="../assets/../assets/images/logos/clami-Logo PNG.png" type="image/x-icon">
+    <script src="https://www.google.com/recaptcha/api.js?render=6LdAAnkpAAAAAF-7Ad_uJZLVwV9RrlJV7hK0Mnym"></script>
 </head>
 
 <body class="homepage is-preload">
@@ -80,7 +81,7 @@
                             <label for="message">MENSAJE</label>
                             <textarea name="message" for="message" placeholder="" maxlength="300"></textarea>
                             <div id="response" style="padding: 4px; border-radius: 6px; color: white;"></div>
-
+                            <input type="hidden" id="g-recaptcha-response" name="g-recaptcha-response">
                             <input type="submit" name="send" value="Enviar" />
                         </form>
                     </div>
@@ -242,6 +243,13 @@
     <script src="../assets/js/util.js"></script>
     <script src="../assets/js/main.js"></script>
     <script>
+        grecaptcha.ready(function() {
+            grecaptcha.execute('6LdAAnkpAAAAAF-7Ad_uJZLVwV9RrlJV7hK0Mnym', {action: 'submit'}).then(function(token) {
+                document.getElementById('g-recaptcha-response').value = token;
+            });
+        });
+
+
         let response = document.getElementById('response');
         let form = document.getElementById('formDatosPersonales');
         
@@ -260,6 +268,7 @@
                     response.style.backgroundColor = "rgb(83, 179, 83)";
                     response.innerHTML = xhr.responseText;
                     form.reset();
+                    location.href = 'https://clavosclami.com/views/agradecimiento.html';
                 } else {
                     response.style.backgroundColor = "rgb(245, 78, 78)";
                     response.innerHTML = 'Error al enviar el formulario, por favor vuelva a intentar';
